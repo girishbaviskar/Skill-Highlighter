@@ -1,0 +1,9 @@
+.skill-highlight {
+  color: red;
+  font-weight: bold;
+}
+ 
+.skill-highlight:hover {
+  background-color: #fdd835;
+  cursor: pointer;
+} 

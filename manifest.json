@@ -1,0 +1,24 @@
+{
+  "manifest_version": 1,
+  "name": "Skill Highlighter",
+  "version": "1.0.0",
+  "description": "Highlights skills found in web pages based on a preconfigured list",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  }
+} 
